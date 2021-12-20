@@ -1,0 +1,214 @@
+.blu-border {
+  background-color: blue;
+  padding: 5px;
+}
+
+.container-logo-list {
+  display: flex;
+  width: 920px;
+  margin: auto;
+  align-items: center;
+}
+
+.container-logo-list img {
+  width: 50px;
+  height: 50px;
+}
+
+.container-logo-list ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  margin: 0;
+}
+
+.container-logo-list ul li {
+  padding: 42px 23px;
+  font-family: fantasy;
+  font-weight: 100;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.container-logo-list ul a {
+  text-decoration: none;
+  color: black;
+}
+
+main .bg-container {
+  background-color: black;
+  position: relative;
+}
+
+main .jumbo-bg {
+  background-image: url(/img/jumbotron.jpg);
+  height: 300px;
+  background-size: cover;
+}
+
+.box-overlay {
+  position: relative;
+  height: 120px;
+}
+
+.container-card {
+  display: flex;
+  width: 16.6666666667%;
+}
+
+.container-card .card {
+  width: 120px;
+  background-color: transparent;
+}
+
+.container-card .card h4 {
+  color: white;
+  font-size: 10px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px 0;
+}
+
+.container-card .card img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-card .card .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f2f0f8;
+  opacity: 0;
+  transition: 2s;
+}
+
+.container-card .card .overlay p {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  text-align: center;
+}
+
+.box-overlay:hover .overlay {
+  opacity: 0.8;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 920px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+#bg-maxi-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-image: url(/img/footer-bg.jpg);
+  overflow: hidden;
+}
+
+.lista-container {
+  display: flex;
+  max-width: 920px;
+  margin: auto;
+  position: relative;
+  padding: 60px 0;
+}
+
+h3 {
+  font-family: fantasy;
+  color: white;
+  font-weight: 100;
+}
+
+ul {
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+
+ul h3 {
+  padding-bottom: 10px;
+}
+
+ul li {
+  font-size: 10px;
+  font-weight: lighter;
+  color: gray;
+  line-height: 15px;
+}
+
+.conetent-list {
+  padding: 0 10px;
+}
+
+.lista-s {
+  display: flex;
+}
+
+.lista-s ul {
+  padding: 0 10px;
+}
+
+.lista-s ul h3 {
+  padding-bottom: 10px;
+}
+
+.lista-s ul li {
+  line-height: 15px;
+}
+
+#elemento-lista {
+  position: absolute;
+  top: 148px;
+}
+
+.style-img {
+  position: absolute;
+  width: 400px;
+  right: 20px;
+  top: -20px;
+}
+
+.final-section {
+  background-color: #303030;
+  padding: 35px 0;
+}
+
+.last-tape {
+  display: flex;
+  align-items: center;
+  max-width: 920px;
+  margin: auto;
+}
+
+.last-tape button {
+  background: transparent;
+  border: 1px solid blue;
+  padding: 5px;
+  color: white;
+}
+
+.icon-lastape {
+  margin-left: auto;
+}
+
+.stile {
+  color: blue;
+}
+
+.icon-img img {
+  width: 45px;
+  padding: 0 10px;
+}
+

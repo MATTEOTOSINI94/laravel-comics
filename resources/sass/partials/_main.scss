@@ -1,0 +1,84 @@
+
+    main{
+        .bg-container{
+            background-color: black;
+            position: relative;
+        }
+
+        .jumbo-bg{
+           
+           background-image: url(/img/jumbotron.jpg);
+           height: 300px;
+           background-size: cover;
+        }
+    }
+    .box-overlay{
+        position: relative;
+        height: 120px;
+
+    }
+.container-card{
+  display: flex;
+ width: calc(100% / 6);
+     
+
+
+  .card{
+        
+     width: 120px;
+    background-color: transparent;
+     
+      
+      h4{
+          color: white;
+          font-size: 10px;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 10px 0;
+          }
+
+      img{
+        width:120px;
+        height: 120px;
+       
+        object-fit: cover
+          
+        
+      };
+
+      .overlay{
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: #f2f0f8;
+          opacity: 0;
+          transition: 2s ;
+
+          p{
+              position: absolute;
+              bottom: 50%;
+              right: 50%;
+              transform: translate(50%, 50%);
+              text-align: center;
+          }
+          
+      }
+
+
+  }
+}
+
+.box-overlay:hover .overlay{
+  opacity: 0.8;
+width: 100%;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 920px;
+    margin: auto;
+    padding: 40px 0;
+    
+}

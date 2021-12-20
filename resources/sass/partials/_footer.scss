@@ -1,0 +1,115 @@
+footer{
+
+   
+}
+#bg-maxi-container{
+    height: fit-content;
+    width: 100%;
+    background-image: url(/img/footer-bg.jpg);
+    overflow: hidden;
+}
+
+.lista-container{
+  
+    display: flex;
+    max-width: 920px;
+    margin: auto;
+    position: relative;
+    padding: 60px 0;
+   
+}
+h3{
+    font-family: fantasy;
+    color: white;
+    font-weight: 100;
+}
+
+    ul{
+        color: white;
+        list-style: none;
+        padding: 0;
+
+        h3{
+            padding-bottom: 10px;
+        }
+
+        li{
+            font-size: 10px;
+            font-weight: lighter;
+            color: gray;
+            line-height: 15px;
+        }
+    }
+
+    
+     
+
+    .conetent-list{
+        padding: 0 10px;
+      
+        
+    }
+
+    .lista-s{
+        display: flex;
+
+        ul{
+            padding: 0 10px;
+
+            h3{
+                padding-bottom: 10px;
+
+            }
+
+            li{
+                line-height: 15px;
+            }
+        }
+    }
+
+    #elemento-lista{
+        position: absolute;
+         top: 148px;
+    }
+
+
+    .style-img{
+        position:absolute;
+        width: 400px;
+        right: 20px;
+        top: -20px;
+
+    }
+
+    .final-section{
+        background-color: rgb(48, 48, 48);
+        padding: 35px 0;
+    }
+
+    .last-tape{
+        display: flex;
+        align-items: center;
+        max-width: 920px;
+        margin: auto;
+
+        button{
+            background: transparent;
+            border: 1px solid blue;
+            padding: 5px;
+            color: white;
+        }
+    }
+
+    .icon-lastape{
+        margin-left: auto;
+
+    }
+    .stile{
+        color: blue;
+    }
+
+    .icon-img img{
+        width: 45px;
+       
+        padding: 0 10px;
+    }
