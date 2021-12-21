@@ -25,31 +25,86 @@
                 <p>{{$fumetti["description"]}}</p>
             </div>
         </div>
-        <div class="col-4"><img src={{asset("/img/adv.jpg")}} alt=""></div>
+        <div class="col-4"><img style="width: 100%" src={{asset("/img/adv.jpg")}} alt=""></div>
       
     </div>  
 </div>
-<section>
-    <div class="container">
+<section style="background-color:rgb(246, 246, 246)" class="border-top">
+    <div class="box-table">
+    <div class="container pt-3">
        <div class="row">
         <div class="col-6">
-            <h3>Talent</h3>
-            <div class="d-flex">
-                <div><h6>Art By:</h6></div>
-                <div><p>{{implode("," ,$fumetti["artists"])}}</p></div>
+            <h3 style="color: black">Talent</h3>
+            <div class="d-flex box-art pt-3 pb-3">
+                <div><p class="info-artist">Art By:</p></div>
+                <div><p class="artist-name">{{implode("," ,$fumetti["artists"])}}</p></div>
               
             </div>
-            <div class="d-flex">
-                <div><h6>Art By:</h6></div>
-                <div><p>{{implode("," ,$fumetti["writers"])}}</p></div>
+            <div class="d-flex box-written pb-3 pt-3">
+                <div><p class="info-artist">Written by:</p></div>
+                <div><p class="artist-name">{{implode("," ,$fumetti["writers"])}}</p></div>
               
             </div>
         </div>
-        <div class="col-6"></div>
+        <div class="col-6">
+            <h3 style="color: black">Specs</h3>
+            <div class="d-flex box-art pt-3 pb-3">
+                <div><p class="info-artist">Series:</p></div>
+                <div><p class="artist-name">{{$fumetti["series"]}}</p></div>
+            </div>
+            <div class="d-flex box-written pt-3 pb-3">
+                <div><p class="info-artist">Written by:</p></div>
+                <div><p class="artist-name">{{$fumetti["price"]}}</p></div>
+            </div>
+            <div class="d-flex pt-3 pb-3">
+                <div><p class="info-artist">On sale date:</p></div>
+                <div><p class="artist-name">{{$fumetti["sale_date"]}}</p></div>
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+
+
+
+       <section class="border-top ">
+       <div class="container box-row">
+           <div class="row">
+           <div class="col-3 box-size border">
+               <div class="d-flex ">
+                <div style="flex-grow: 1"><p class="icon-text" >Digital Comics</p></div>
+                <div><img class="text-right icon-size"  src={{asset("img/buy-comics-digital-comics.png")}}  alt=""></div>
+               </div>
+           </div>
+           <div class="col-3 box-size border">
+            <div class="d-flex ">
+                <div style="flex-grow: 1"><p class="icon-text" >Digital Comics</p></div>
+                <div><img class="text-right icon-size"  src={{asset("img/buy-comics-digital-comics.png")}}  alt=""></div>
+               </div>
+           </div>
+           <div class="col-3 box-size border">
+                <div class="d-flex ">
+                    <div style="flex-grow: 1"><p class="icon-text" >Subscription</p></div>
+                    <div><img class="icon-style icon-size" src="{{asset("img/buy-comics-subscriptions.png")}}"  alt=""></div>
+                </div>
+            </div>
+
+            <div class="col-3 box-size border">
+                <div class="d-flex ">
+                    <div style="flex-grow: 1"><p class="icon-text" >Comic Shop Locator</p></div>
+                    <div> <img class="icon-style icon-size" src="{{asset("img/buy-comics-shop-locator.png")}}"  alt=""></div>
+                </div>
+               </div>
+           </div>
+       </div>
+        
        </div>
     </div>
 </section>
-@dump($fumetti)
+
+   
+</section>
+
 @endsection
 
 
@@ -57,7 +112,8 @@
 <style>
 .info-banner{
     background-color: rgb(85, 186, 89);
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
+
     
 }
 .info-price{
@@ -86,5 +142,38 @@
     position: absolute;
     width: 200px;
     bottom: 40px
+}
+
+.info-artist{
+font-size: 10px;
+width: 50px;
+margin: 0
+}
+
+.artist-name{
+font-size: 13px;
+margin: 0;
+padding-left: 100px;
+font-weight:bold;
+}
+
+.box-written{
+border-top: 1px solid grey;
+border-bottom:1px solid grey
+}
+
+.box-size{
+    padding: 10px
+
+}
+
+.icon-size{
+    width: 30px;
+    filter:contrast(0.5);
+   
+}
+
+.box-table{
+    padding-bottom: 150px
 }
 </style>

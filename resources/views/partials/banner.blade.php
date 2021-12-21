@@ -1,25 +1,25 @@
 
 
-<section class="section-icon">
+<section class="section-icon" style=@yield('stile')>
     <div class="icon-container">
         <div  class="flex-style">
-            <img class="icon-style" src=""  alt="">
+            <img class="icon-style" src={{asset("img/buy-comics-digital-comics.png")}}  alt="">
             <p class="icon-text" >Digital Comics</p>
         </div>
         <div  class="flex-style">
-            <img class="icon-style" src=""  alt="">
+            <img class="icon-style" src="{{asset("img/buy-comics-merchandise.png")}}"  alt="">
             <p class="icon-text" >Dc Merchandaise</p>
         </div>
         <div  class="flex-style">
-            <img class="icon-style" src=""  alt="">
+            <img class="icon-style" src="{{asset("img/buy-comics-subscriptions.png")}}"  alt="">
             <p class="icon-text" >Subscription</p>
         </div>
         <div  class="flex-style">
-            <img class="icon-style" src=""  alt="">
+            <img class="icon-style" src="{{asset("img/buy-comics-shop-locator.png")}}"  alt="">
             <p class="icon-text" >Comic Shop Locator</p>
         </div>
         <div  class="flex-style">
-            <img class="icon-style" src=""  alt="">
+            <img class="icon-style" src="{{asset("img/buy-dc-power-visa.svg")}}"  alt="">
             <p class="icon-text" >Dc Power Visa</p>
         </div>
     </div>
