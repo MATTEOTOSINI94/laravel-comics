@@ -35,6 +35,10 @@
   color: black;
 }
 
+.active {
+  border-bottom: 5px solid cornflowerblue;
+}
+
 main .bg-container {
   background-color: black;
   position: relative;

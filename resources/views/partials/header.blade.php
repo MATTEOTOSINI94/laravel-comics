@@ -4,7 +4,7 @@
     
 [
   "title"=>"caracheters",
-  "route_name" =>"/"
+  "route_name" =>"home"
 ],
 [
   "title"=>"comics",
@@ -47,7 +47,9 @@
   "route_name" =>"shop"
 ],
      
-]
+];
+
+$rotta = Request::route()->getName()
 @endphp
 
 <header class="hello">
@@ -55,12 +57,15 @@
   </div>
     <div class="container-logo-list">
       <div>
-        <img src={{asset("img/dc-logo.png")}} alt="">
+        <img style="" src={{asset("img/dc-logo.png")}} alt="">
       </div>
         <ul>
        @foreach ($menuLink as $link)
-        <li ><a style="text-transform: uppercase" href="/">{{$link["title"]}}</a></li>
+        <li  class={{$rotta === $link["route_name"] ?" active" : ''}}><a style="text-transform: uppercase " href={{route($link["route_name"])}}>{{$link["title"]}}</a></li>
        @endforeach
         </ul>
     </div>
   </header>
+
+
+  

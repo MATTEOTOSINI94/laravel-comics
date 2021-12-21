@@ -14,14 +14,14 @@
         
         
         <div class="col-8">
-            <h1>{{$fumetti["title"]}}</h1>
+            <h1 class="pb-3">{{$fumetti["title"]}}</h1>
             <div class="d-flex info-banner">
                 <div class="info-price"><p class="m-0">US price :{{$fumetti["price"]}}</p>  </div>
                 <div class="info-avaible"><p class="m-0">AVAIBLE</p></div>
                 <div class="info-check"><p class="m-0">Check Avaibilty</p></div>
             </div>
 
-            <div class="">
+            <div class="pt-3">
                 <p>{{$fumetti["description"]}}</p>
             </div>
         </div>
