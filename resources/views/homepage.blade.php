@@ -5,8 +5,8 @@
 <div class="bg-container">
            
     <div class="content">
-@foreach ($film as $item)
-<div class="container-card ">
+@foreach ($film as $key=>  $item)
+<a class="container-card " href="fumetti/{{$key}}">
 
     <div class="card">
         <div class="box-overlay">
@@ -15,7 +15,7 @@
         </div>
         <h4>{{$item["title"]}}</h4>
     </div>
-</div>
+</a>
 
 @endforeach
 </div>

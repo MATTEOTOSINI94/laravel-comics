@@ -13,11 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/caracheters', function () {
+Route::get('/', function () {
     $filmDati = config("comics");
     return view('homepage',["film"=>$filmDati]);
-})->name("caracheters");
+});
 
+Route::get('/fumetti/{id?}', function ($id) {
+    $filmDati = config("comics");
+    if (is_numeric($id) && $id < count($filmDati) ) {
+        $fumetto=$filmDati[$id];
+        return view('fumetti',["fumetti"=>$fumetto]);
+    }
+    else(abort("404"));
+  
+})->name("fumetti");
 
 Route::get('/comics', function () {
     return view('comicpage');

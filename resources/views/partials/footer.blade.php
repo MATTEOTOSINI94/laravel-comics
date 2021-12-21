@@ -13,20 +13,11 @@
                 <li >elemento</li>
                 <li >elemento</li>
                 <li >elemento</li>
-               
-
             </ul>
-          
-              
-                 
-                    
                 <ul>
                    <h5>DC</h5>
                    <li >el</li>
                    <li >el</li>
-                  
-                  
-                
               </ul>
               </div>
            
@@ -45,13 +36,8 @@
                   <li>element</li>
                   <li>element</li>
                   <li>element</li>
+               </ul>
 
-                 
-            </ul>
-           
-            
-                
-                
                 <ul>
                   <h5>SHOP</h5>
                   <li >site</li>
@@ -59,8 +45,6 @@
                   <li >site</li>
                   <li >site</li>
                   <li >site</li>
-                
-                  
             </ul>
            </div>
           
@@ -76,20 +60,16 @@
           <div class="last-tape">
               <div><button>SIGN-UP-NOW</button></div>
               <div class="icon-lastape">
-                  <h5 class="stile">FOLLOW US</h5>
+                  <h5 class="stile m-0">FOLLOW US</h5>
                </div>
 
                  <div class="icon-img">
-                     <img src="img/footer-facebook.png" alt="">
-                      <img src="img/footer-periscope.png" alt="">
-                      <img src="img/footer-pinterest.png" alt="">
-                      <img src="img/footer-twitter.png" alt="">
-                      <img src="img/footer-youtube.png" alt="">
+                      <img src={{asset("img/footer-facebook.png")}} alt="">
+                      <img src={{asset("img/footer-periscope.png")}} alt="">
+                      <img src={{asset("img/footer-pinterest.png")}} alt="">
+                      <img src={{asset("img/footer-twitter.png")}} alt="">
+                      <img src={{asset("img/footer-youtube.png")}} alt="">
                   </div> 
-                      
-                  
-             
-              
           </div>
 
       </section>

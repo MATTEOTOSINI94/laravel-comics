@@ -23,7 +23,6 @@
             <p class="icon-text" >Dc Power Visa</p>
         </div>
     </div>
-  
 </section>
 
 <style>
